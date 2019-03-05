@@ -25,8 +25,8 @@ steps:
   displayName: 'Publishing App...'
   inputs:
     command: publish
-    publishWebProjects: false
-    arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory) BuildAndDeploy/BuildAndDeploy.csproj'
+    publishWebProjects: true
+    arguments: '--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
     zipAfterPublish: false
 
 - task: PublishBuildArtifacts@1
